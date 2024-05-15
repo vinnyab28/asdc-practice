@@ -1,1 +1,23 @@
-<p>product-details works!</p>
+<p-card [header]="product?.title" [subheader]="">
+  <ng-template pTemplate="header">
+    <div class="text-center">
+      <img
+        [alt]="product?.title"
+        [src]="product?.image"
+        style="width: 100px; height: 100px"
+      />
+    </div>
+  </ng-template>
+  <p>
+    {{ product?.description }}
+  </p>
+  <ng-template pTemplate="footer">
+    <div class="flex gap-3 mt-1">
+      <p-button
+        [label]="'Buy - ' + (product?.price | currency)"
+        class="w-full"
+        styleClass="w-full"
+      />
+    </div>
+  </ng-template>
+</p-card>
