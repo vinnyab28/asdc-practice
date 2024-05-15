@@ -1,20 +1,18 @@
-<div class="container">
-  <div class="row">
-    <div class="col d-flex justify-content-center">
-      <p-button
-        label="Click here to view Users"
-        (onClick)="onShowUsers()"
-        severity="info"
-        styleClass="m-4"
-      ></p-button>
-      <button
-        [routerLink]="['/products']"
-        routerLinkActive="router-link-active"
-        pButton
-        class="m-4"
-      >
-        Click here to view Products
-      </button>
-    </div>
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <p-button
+      label="Click here to view Users"
+      (onClick)="onShowUsers()"
+      severity="info"
+      styleClass="m-4"
+    ></p-button>
+    <button
+      [routerLink]="['/products']"
+      routerLinkActive="router-link-active"
+      pButton
+      class="m-4"
+    >
+      Click here to view Products
+    </button>
   </div>
 </div>
